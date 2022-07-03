@@ -1146,6 +1146,9 @@ a {
 .popup__image {
   margin-right: 40px;
 }
+.popup__image img {
+  border-radius: 10px;
+}
 @media (max-width: 576px) {
   .popup__image {
     margin-right: 20px;
@@ -1254,12 +1257,6 @@ a {
   justify-content: space-between;
   max-width: 70%;
 }
-@media (max-width: 576px) {
-  .tabs__nav-item {
-    margin-right: 40px;
-    margin-bottom: 20px;
-  }
-}
 .tabs__nav-btn {
   font-weight: 400;
   font-size: 20px;
@@ -1279,9 +1276,13 @@ a {
   color: rgba(20, 16, 36, 0.2);
 }
 @media (max-width: 576px) {
+  .tabs__nav-btn {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
   .tabs__nav {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    max-width: 100%;
   }
 }
 
